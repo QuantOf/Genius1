@@ -6,7 +6,7 @@ export const INITIAL_SESSION = {
 
 export async function initCommand(ctx) {
   ctx.session = { ...INITIAL_SESSION }
-  await ctx.reply('Жду вашего голосового или текстового сообщения')
+  await ctx.reply('На связи. Ожидаю сообщения.')
 }
 
 export async function processTextToChat(ctx, content) {
