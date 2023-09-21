@@ -4,9 +4,12 @@ export const INITIAL_SESSION = {
   messages: [],
 }
 
+export const msgReceived = 'Сообщение принял. Жду ответ от сервера...'; 
+export const msgWaitingMsg = 'На связи. Ожидаю сообщения.'; 
+
 export async function initCommand(ctx) {
   ctx.session = { ...INITIAL_SESSION }
-  await ctx.reply('На связи. Ожидаю сообщения.')
+  await ctx.reply(msgWaitingMsg);
 }
 
 export async function processTextToChat(ctx, content) {
