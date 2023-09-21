@@ -4,8 +4,8 @@ export const INITIAL_SESSION = {
   messages: [],
 }
 
-export const msgReceived = 'Сообщение принял. Жду ответ от сервера...'; 
-export const msgWaitingMsg = 'На связи. Ожидаю сообщения.'; 
+export const msgReceived = 'Принято, думаю...'; 
+export const msgWaitingMsg = 'На связи. Что скажешь?'; 
 
 export async function initCommand(ctx) {
   ctx.session = { ...INITIAL_SESSION }
